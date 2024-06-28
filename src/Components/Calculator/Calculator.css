@@ -1,0 +1,74 @@
+/* Center the calculator on the page */
+.calculator-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .calculator {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    width: 300px;
+    height: 400px;
+    background-color: #2a9df4; /* Change theme color to blue */
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .display {
+    grid-column: span 4;
+    background-color: #2e2e2e;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .button {
+    background-color: #4b3f72;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .button:hover {
+    background-color: #665d8a;
+  }
+  
+  /* Change color of the "C" button */
+  .button.clear {
+    background-color: #ff5349;
+  }
+  
+  .button.clear:hover {
+    background-color: #ff6f61;
+  }
+  
+  /* Ensure the "0" button spans two columns */
+  .zero {
+    grid-column: span 2;
+  }
+  
+  /* Ensure the "=" button spans three columns */
+  .equal {
+    background-color: #ff5349;
+    grid-column: span 2;
+  }
+  
+  .equal:hover {
+    background-color: #ff6f61;
+  }
+  

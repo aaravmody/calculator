@@ -1,0 +1,98 @@
+/* Center align the entire login page */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Change this to your desired background color */
+}
+  
+/* Styles for the login form */
+.card {
+    width: 438px; /* Increased width by 25% */
+    padding: 21.25px; /* Increased padding by 25% */
+    background-color: #171717;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease-in-out;
+}
+  
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 12.5px; /* Increased gap by 25% */
+}
+  
+#heading {
+    text-align: center;
+    margin: 12.5px 0; /* Increased margin by 25% */
+    color: rgb(255, 255, 255);
+    font-size: 1.5em; /* Increased font size */
+}
+  
+.field {
+    display: flex;
+    align-items: center;
+    gap: 0.625em; /* Increased gap by 25% */
+    border-radius: 15px;
+    padding: 12.5px; /* Increased padding by 25% */
+    background-color: #171717;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+  
+.input-icon {
+    height: 1.625em; /* Increased size by 25% */
+    width: 1.625em; /* Increased size by 25% */
+    fill: white;
+}
+  
+.input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #d3d3d3;
+}
+  
+.btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px; /* Increased margin by 25% */
+}
+
+.button1 {
+    margin-right: 12.5px; /* Increased margin by 25% */
+}
+  
+.button1, .button2 {
+    flex: 1;
+    padding: 12.5px; /* Increased padding by 25% */
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: background-color 0.4s ease-in-out;
+    background-color: #252525;
+    color: white;
+    cursor: pointer;
+}
+  
+.button1:hover, .button2:hover {
+    background-color: rgb(0, 30, 255);
+}
+  
+.button3 {
+    margin-top: 6.25px; /* Increased margin by 25% */
+    padding: 12.5px; /* Increased padding by 25% */
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: background-color 0.4s ease-in-out;
+    background-color: #252525;
+    color: white;
+    cursor: pointer;
+}
+  
+.button3:hover {
+    background-color: red;
+}
