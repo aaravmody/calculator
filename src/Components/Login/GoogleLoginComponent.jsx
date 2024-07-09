@@ -1,18 +1,14 @@
 import React from 'react';
 import { GoogleLogin } from '@react-oauth/google';
 import { useNavigate } from 'react-router-dom';
-import { jwtDecode } from 'jwt-decode';
 
-const Google = () => {
+const GoogleLoginComponent = () => {
   const navigate = useNavigate();
 
   const handleSuccess = (credentialResponse) => {
     console.log(credentialResponse);
-    var decoded = jwtDecode(credentialResponse.credential);
-    console.log(decoded);
-
     // Save user data to localStorage or context
-    localStorage.setItem('user', JSON.stringify(decoded));
+    localStorage.setItem('user', JSON.stringify(credentialResponse));
 
     // Redirect to the home page
     navigate('/home');
@@ -30,4 +26,4 @@ const Google = () => {
   );
 };
 
-export default Google;
+export default GoogleLoginComponent;

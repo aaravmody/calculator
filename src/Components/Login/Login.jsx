@@ -1,13 +1,17 @@
+// src/components/Login.jsx
 import React from 'react';
 import './Login.css';
 import { useNavigate } from 'react-router-dom';
-import Google from './Google';
 
 const Login = () => {
   const navigate = useNavigate();
 
-  const gotoreg = () => {
+  const gotoRegister = () => {
     navigate('/register');
+  };
+
+  const handleGoogleLogin = () => {
+    window.location.href = 'http://localhost:3000/auth/google';
   };
 
   return (
@@ -29,8 +33,8 @@ const Login = () => {
         <div className="btn">
           <button className="button1" type="button">Login</button>
         </div>
-        <button className="button3" type="button" onClick={gotoreg}>Register</button>
-        <Google />
+        <button className="button3" type="button" onClick={gotoRegister}>Register</button>
+        <button className="button3" type="button" onClick={handleGoogleLogin}>Login with Google</button>
       </form>
     </div>
   );
